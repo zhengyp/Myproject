@@ -1,0 +1,11 @@
+1 postman导出json文件和环境变量json文件 最好放到同一文件夹下面
+
+2 Newman 运行环境;node.js npm   需要配置node.js 的环境变量
+
+3 执行测试脚本  newman run D:\neman\123.postman_collection.json --environment D:\neman\456.postman_environment.json --reporters cli,html,json,junit --reporter-json-export jsonOut.json --reporter-junit-export xmlOut.xml --reporter-html-export htmlOut.html
+
+4 导出测试报告  newman run c:\test1.json --reporters cli,html,json,junit --reporter-json-export jsonOut.json --reporter-junit-export xmlOut.xml --reporter-html-export htmlOut.html
+
+
+5 测试报告的保存路劲为当前脚本执行路劲   即pwd路劲
+
