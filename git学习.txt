@@ -45,3 +45,25 @@ git 使用方法
 17 切换分支：git checkout dev   切回主分支
 
 18 分支修改 git add . 必须跟新本地仓库才能切回主分支  git commit -m "dev修改"
+
+
+
+165  git branch dev
+  166  git checkout dev
+  167  git branch
+  168  git checkout master
+  169  git add branch.txt
+  170  git commit -m "分支测试"
+  171  git checkout dev
+  172  git checkout master
+  173  git checkout dev
+  174  git add branch.txt
+  175  git commit -m "第一次修改分支"
+  176  git checkout master
+  177  git push -u origin master
+  178  git merge dev
+  179  git status
+  180  git commit -a
+  181  git merge dev
+  182  git push
+  183  history
