@@ -39,3 +39,9 @@ git 使用方法
 14 更新本地仓库 cd /d/opt1  git add .  git commit -m "编辑"  
 
 15 更新远程仓库 git push 
+
+16 创建分支 git branch dev  查看分支：git branch 
+
+17 切换分支：git checkout dev   切回主分支
+
+18 分支修改 git add . 必须跟新本地仓库才能切回主分支  git commit -m "dev修改"
