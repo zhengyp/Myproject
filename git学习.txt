@@ -33,3 +33,9 @@ git 使用方法
 11 更新文件 git add readme.txt  git commit -m "优化二进宫"   git push -u origin master 
 
 12 开始学习分支相关部分
+
+13 克隆代码库到本地  拷贝链接  打开gitbash  cd /d/opt1    git clone git@github.com:zhengyp/Myproject.git
+
+14 更新本地仓库 cd /d/opt1  git add .  git commit -m "编辑"  
+
+15 更新远程仓库 git push 
