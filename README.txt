@@ -33,3 +33,14 @@ git 使用方法
 11 更新文件 git add readme.txt  git commit -m "优化二进宫"   git push -u origin master 
 
 12 开始学习分支相关部分
+
+13 通常我们提交git的时候都是
+
+git add .
+git commit -m "some str"
+git push
+
+这三大步，而实际上，你只需要两条命令就够了，除非有新的文件要被添加进去。
+
+git commit -am "some str"
+git push
