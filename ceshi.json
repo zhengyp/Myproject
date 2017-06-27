@@ -1,0 +1,1622 @@
+{
+	"id": "ad420363-c53d-4bff-9b2d-da1d21b62f87",
+	"name": "用户和房车订单（未支付）回归",
+	"allTests": [],
+	"timestamp": "2017-06-19T03:48:23.135Z",
+	"collection_id": "1cb5d61f-b489-de82-cd53-bd9dc381271a",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "72e0483b-3697-cc67-d4f0-ac15d5ce7109",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "1cb5d61f-b489-de82-cd53-bd9dc381271a",
+		"name": "用户和房车订单（未支付）回归",
+		"description": "",
+		"order": [
+			"5802b6da-d778-35af-54ab-9c53926c7f93",
+			"4d8e70f1-9d8b-8b3a-a4e2-9d7514224102",
+			"2c5dd041-f757-792c-3a0b-2eabb2b1dcf7",
+			"5e317be1-1313-38b3-0037-096365868e9b",
+			"b31a7c8c-0bf1-db2a-fcc1-30adf1900358",
+			"a6bba813-2a2f-9f81-224c-7bb0f9d5ee29",
+			"8b227c82-812d-b877-6c35-5b09c30f68c5",
+			"596f50cf-d96b-1f7a-b808-3421b70f618b",
+			"ced28ff2-0d84-2d47-3024-11a957966636",
+			"23b17949-2bc4-aca9-5c82-84aa0457409a",
+			"3df42afd-1f20-d719-5aae-aec5755c5bd0",
+			"e6f9557e-3ab5-8876-d69f-bcce30ad86a2",
+			"dfaaf991-05eb-bf2c-ca7f-d8819e3353ac",
+			"1d1bba1e-129f-7dbe-9a2c-265ef82e4905",
+			"bef01718-9f3d-ed6c-43f4-c6c94190fefa",
+			"ecc97ff7-c15a-8600-4a49-e23a65ec39b3",
+			"add1d1d5-1fb5-39b9-e67b-7357ca3bf0e7",
+			"362cd82a-1e83-ebc2-fde7-16fa70c5f615",
+			"319e5c76-fb25-f119-1083-98ec7921e196",
+			"5cba41c2-d2d0-5072-0ef2-81bcc71c4d0f",
+			"7ee9ec12-e58c-3a17-4371-88ef45ad7695",
+			"7d5d9302-3dc4-e561-9914-5c7a4dc3c980",
+			"f3409259-32ab-9337-369e-e8a47ad53709",
+			"e1ee98bb-a61d-558b-d4fc-3594ee352d7e"
+		],
+		"folders": [],
+		"timestamp": 0,
+		"synced": true,
+		"remote_id": 0,
+		"owner": "1910021",
+		"sharedWithTeam": false,
+		"subscribed": false,
+		"remoteLink": "",
+		"remoteLinkUpdatedAt": null,
+		"public": false,
+		"createdAt": 1495520864324,
+		"updatedAt": 1497868470359,
+		"write": true,
+		"published": false,
+		"favorite": false,
+		"permissions": {},
+		"syncedPermissions": {}
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [
+		{
+			"key": "token",
+			"value": "6247733c-b70b-436a-9ab2-01e57760941e",
+			"enabled": true,
+			"type": "text"
+		},
+		{
+			"key": "password",
+			"value": "12345678",
+			"enabled": true,
+			"type": "text"
+		},
+		{
+			"key": "newpassword",
+			"value": "654321",
+			"enabled": true,
+			"type": "text"
+		},
+		{
+			"key": "token1",
+			"value": "5f3370b4-2c6e-4445-b6c4-429c4ab155ee",
+			"enabled": true,
+			"type": "text"
+		},
+		{
+			"key": "token2",
+			"value": "fbd98c7a-41b0-4ece-9657-af438d092165",
+			"enabled": true,
+			"type": "text"
+		},
+		{
+			"key": "input.pageIndex",
+			"value": "1",
+			"enabled": true,
+			"type": "text"
+		},
+		{
+			"key": "input.pageSize",
+			"value": "10",
+			"enabled": true,
+			"type": "text"
+		},
+		{
+			"key": "realname",
+			"value": "赵日天",
+			"enabled": true,
+			"type": "text"
+		},
+		{
+			"key": "sessionId",
+			"value": "f62c36bd-8bb2-4b69-a374-8206f88c8a63",
+			"enabled": true,
+			"type": "text"
+		},
+		{
+			"key": "phone",
+			"value": "15629890260",
+			"enabled": true,
+			"type": "text"
+		},
+		{
+			"key": "FCorderId",
+			"value": "",
+			"enabled": true,
+			"type": "text"
+		},
+		{
+			"key": "lard",
+			"value": "variable_value",
+			"enabled": true,
+			"type": "text"
+		},
+		{
+			"key": "sort",
+			"value": "1",
+			"enabled": true,
+			"type": "text"
+		},
+		{
+			"key": "begindata",
+			"value": "2017",
+			"enabled": true,
+			"type": "text"
+		},
+		{
+			"key": "enddata",
+			"value": "2019",
+			"enabled": true,
+			"type": "text"
+		},
+		{
+			"key": "test",
+			"value": "16",
+			"enabled": true,
+			"type": "text"
+		}
+	],
+	"results": [
+		{
+			"name": "管理员登录接口",
+			"id": "5802b6da-d778-35af-54ab-9c53926c7f93",
+			"url": "http://10.66.30.71:8004/backstage-users/sign-in",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"登录成功": true,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"登录成功": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"93"
+			],
+			"allTests": [
+				{
+					"登录成功": true,
+					"Status code is 200": true
+				}
+			],
+			"time": "93",
+			"totalRequestTime": "93",
+			"iterationResults": {}
+		},
+		{
+			"name": "添加用户接口",
+			"id": "4d8e70f1-9d8b-8b3a-a4e2-9d7514224102",
+			"url": "http://10.66.30.71:8004/users",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				"88"
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			],
+			"time": "88",
+			"totalRequestTime": "88",
+			"iterationResults": {}
+		},
+		{
+			"name": "用户列表接口",
+			"id": "2c5dd041-f757-792c-3a0b-2eabb2b1dcf7",
+			"url": "http://10.66.30.71:8004/users/search",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"获取列表成功": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"获取列表成功": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"68"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"获取列表成功": true
+				}
+			],
+			"time": "68",
+			"totalRequestTime": "68",
+			"iterationResults": {}
+		},
+		{
+			"name": "用户详情接口",
+			"id": "5e317be1-1313-38b3-0037-096365868e9b",
+			"url": "http://10.66.30.71:8004/users/4304017601884160",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"phone is ok": true,
+				"表单数量与文档数量一致": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"phone is ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"表单数量与文档数量一致": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"70"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"phone is ok": true,
+					"表单数量与文档数量一致": true
+				}
+			],
+			"time": "70",
+			"totalRequestTime": "70",
+			"iterationResults": {}
+		},
+		{
+			"name": "房车产品-列表查询 copy",
+			"id": "a6bba813-2a2f-9f81-224c-7bb0f9d5ee29",
+			"url": "http://10.66.30.71:8004/touring-car/search",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"存在列表数据": true,
+				"获取不重复sort": true
+			},
+			"testPassFailCounts": {
+				"存在列表数据": {
+					"pass": 1,
+					"fail": 0
+				},
+				"获取不重复sort": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"75"
+			],
+			"allTests": [
+				{
+					"存在列表数据": true,
+					"获取不重复sort": true
+				}
+			],
+			"time": "75",
+			"totalRequestTime": "75",
+			"iterationResults": {}
+		},
+		{
+			"name": "房车产品-创建 ",
+			"id": "8b227c82-812d-b877-6c35-5b09c30f68c5",
+			"url": "http://10.66.30.71:8004/touring-car",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				"75"
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			],
+			"time": "75",
+			"totalRequestTime": "75",
+			"iterationResults": {}
+		},
+		{
+			"name": "房车产品-列表查询 ",
+			"id": "596f50cf-d96b-1f7a-b808-3421b70f618b",
+			"url": "http://10.66.30.71:8004/touring-car/search",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"74"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "74",
+			"totalRequestTime": "74",
+			"iterationResults": {}
+		},
+		{
+			"name": "APP登陆",
+			"id": "ced28ff2-0d84-2d47-3024-11a957966636",
+			"url": "http://10.66.30.71:8003/users/authorization/sign-in",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"token更新完成": true,
+				"返回userID": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"token更新完成": {
+					"pass": 1,
+					"fail": 0
+				},
+				"返回userID": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"69"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"token更新完成": true,
+					"返回userID": true
+				}
+			],
+			"time": "69",
+			"totalRequestTime": "69",
+			"iterationResults": {}
+		},
+		{
+			"name": "修改个人资料-除头像部分 ",
+			"id": "23b17949-2bc4-aca9-5c82-84aa0457409a",
+			"url": "http://10.66.30.71:8003/users/profile/edit",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"75"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "75",
+			"totalRequestTime": "75",
+			"iterationResults": {}
+		},
+		{
+			"name": "获取个人资料 ",
+			"id": "3df42afd-1f20-d719-5aae-aec5755c5bd0",
+			"url": "http://10.66.30.71:8003/users/profile",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"返回性别为数字": true,
+				"电话正确": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"返回性别为数字": {
+					"pass": 1,
+					"fail": 0
+				},
+				"电话正确": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"131"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"返回性别为数字": true,
+					"电话正确": true
+				}
+			],
+			"time": "131",
+			"totalRequestTime": "131",
+			"iterationResults": {}
+		},
+		{
+			"name": "房车列表 ",
+			"id": "e6f9557e-3ab5-8876-d69f-bcce30ad86a2",
+			"url": "http://10.66.30.71:8003/touring-car",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"存在列表数据": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"存在列表数据": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"79"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"存在列表数据": true
+				}
+			],
+			"time": "79",
+			"totalRequestTime": "79",
+			"iterationResults": {}
+		},
+		{
+			"name": "房车详情 ",
+			"id": "dfaaf991-05eb-bf2c-ca7f-d8819e3353ac",
+			"url": "http://10.66.30.71:8003/touring-car/4449343725924352",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"表单数量与文档数量一致": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"表单数量与文档数量一致": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"74"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"表单数量与文档数量一致": true
+				}
+			],
+			"time": "74",
+			"totalRequestTime": "74",
+			"iterationResults": {}
+		},
+		{
+			"name": "房车图片集合",
+			"id": "1d1bba1e-129f-7dbe-9a2c-265ef82e4905",
+			"url": "http://10.66.30.71:8003/touring-car/4449343725924352/pictures",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"68"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "68",
+			"totalRequestTime": "68",
+			"iterationResults": {}
+		},
+		{
+			"name": "管理员登录接口 copy",
+			"id": "bef01718-9f3d-ed6c-43f4-c6c94190fefa",
+			"url": "http://10.66.30.71:8004/backstage-users/sign-in",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"登录成功": true,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"登录成功": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"83"
+			],
+			"allTests": [
+				{
+					"登录成功": true,
+					"Status code is 200": true
+				}
+			],
+			"time": "83",
+			"totalRequestTime": "83",
+			"iterationResults": {}
+		},
+		{
+			"name": "房车产品-获取基础设置详情（配置中心:sys_config） ",
+			"id": "ecc97ff7-c15a-8600-4a49-e23a65ec39b3",
+			"url": "http://10.66.30.71:8004/touring-car/setting",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Your test name": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Your test name": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"71"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Your test name": true
+				}
+			],
+			"time": "71",
+			"totalRequestTime": "71",
+			"iterationResults": {}
+		},
+		{
+			"name": "APP登陆 copy",
+			"id": "add1d1d5-1fb5-39b9-e67b-7357ca3bf0e7",
+			"url": "http://10.66.30.71:8003/users/authorization/sign-in",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"token更新完成": true,
+				"返回userID": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"token更新完成": {
+					"pass": 1,
+					"fail": 0
+				},
+				"返回userID": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"68"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"token更新完成": true,
+					"返回userID": true
+				}
+			],
+			"time": "68",
+			"totalRequestTime": "68",
+			"iterationResults": {}
+		},
+		{
+			"name": "房车预定 ",
+			"id": "362cd82a-1e83-ebc2-fde7-16fa70c5f615",
+			"url": "http://10.66.30.71:8003/orders/touring-car/create",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"预订成功并获的订单id": true,
+				"预订成功并获的订单code": true,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"预订成功并获的订单id": {
+					"pass": 1,
+					"fail": 0
+				},
+				"预订成功并获的订单code": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"87"
+			],
+			"allTests": [
+				{
+					"预订成功并获的订单id": true,
+					"预订成功并获的订单code": true,
+					"Status code is 200": true
+				}
+			],
+			"time": "87",
+			"totalRequestTime": "87",
+			"iterationResults": {}
+		},
+		{
+			"name": "管理员登录接口",
+			"id": "319e5c76-fb25-f119-1083-98ec7921e196",
+			"url": "http://10.66.30.71:8004/backstage-users/sign-in",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"登录成功": true,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"登录成功": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"81"
+			],
+			"allTests": [
+				{
+					"登录成功": true,
+					"Status code is 200": true
+				}
+			],
+			"time": "81",
+			"totalRequestTime": "81",
+			"iterationResults": {}
+		},
+		{
+			"name": "房车订单后台取消接口",
+			"id": "5cba41c2-d2d0-5072-0ef2-81bcc71c4d0f",
+			"url": "http://10.66.30.71:8004/orders/touring-car/4523519623065600/cancel",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"84"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "84",
+			"totalRequestTime": "84",
+			"iterationResults": {}
+		},
+		{
+			"name": "APP登陆 ",
+			"id": "7ee9ec12-e58c-3a17-4371-88ef45ad7695",
+			"url": "http://10.66.30.71:8003/users/authorization/sign-in",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"successful login": true,
+				"token更新完成": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"successful login": {
+					"pass": 1,
+					"fail": 0
+				},
+				"token更新完成": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"69"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"successful login": true,
+					"token更新完成": true
+				}
+			],
+			"time": "69",
+			"totalRequestTime": "69",
+			"iterationResults": {}
+		},
+		{
+			"name": "再次预订房车-返回房车Id跳转 ",
+			"id": "7d5d9302-3dc4-e561-9914-5c7a4dc3c980",
+			"url": "http://10.66.30.71:8003/orders/touring-car/reserve-again/4523519623065600",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"70"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "70",
+			"totalRequestTime": "70",
+			"iterationResults": {}
+		},
+		{
+			"name": "我的订单",
+			"id": "f3409259-32ab-9337-369e-e8a47ad53709",
+			"url": "http://10.66.30.71:8003/orders/my-orders",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"查询列表成功": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"查询列表成功": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"82"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"查询列表成功": true
+				}
+			],
+			"time": "82",
+			"totalRequestTime": "82",
+			"iterationResults": {}
+		},
+		{
+			"name": "房车订单详情 ",
+			"id": "e1ee98bb-a61d-558b-d4fc-3594ee352d7e",
+			"url": "http://10.66.30.71:8003/orders/touring-car/4523519623065600",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"70"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "70",
+			"totalRequestTime": "70",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 42,
+	"totalFail": 2,
+	"totalTime": 1804,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "管理员登录接口",
+			"id": "5802b6da-d778-35af-54ab-9c53926c7f93",
+			"url": "http://10.66.30.71:8004/backstage-users/sign-in",
+			"time": "2017-06-19T03:48:23.135Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"登录成功": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "添加用户接口",
+			"id": "4d8e70f1-9d8b-8b3a-a4e2-9d7514224102",
+			"url": "http://10.66.30.71:8004/users",
+			"time": "2017-06-19T03:48:23.135Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			}
+		},
+		{
+			"name": "用户列表接口",
+			"id": "2c5dd041-f757-792c-3a0b-2eabb2b1dcf7",
+			"url": "http://10.66.30.71:8004/users/search",
+			"time": "2017-06-19T03:48:23.135Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"获取列表成功": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "用户详情接口",
+			"id": "5e317be1-1313-38b3-0037-096365868e9b",
+			"url": "http://10.66.30.71:8004/users/4304017601884160",
+			"time": "2017-06-19T03:48:23.135Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"phone is ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"表单数量与文档数量一致": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "房车产品-列表查询 copy",
+			"id": "a6bba813-2a2f-9f81-224c-7bb0f9d5ee29",
+			"url": "http://10.66.30.71:8004/touring-car/search",
+			"time": "2017-06-19T03:48:23.135Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"存在列表数据": {
+					"pass": 1,
+					"fail": 0
+				},
+				"获取不重复sort": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "房车产品-创建 ",
+			"id": "8b227c82-812d-b877-6c35-5b09c30f68c5",
+			"url": "http://10.66.30.71:8004/touring-car",
+			"time": "2017-06-19T03:48:23.135Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			}
+		},
+		{
+			"name": "房车产品-列表查询 ",
+			"id": "596f50cf-d96b-1f7a-b808-3421b70f618b",
+			"url": "http://10.66.30.71:8004/touring-car/search",
+			"time": "2017-06-19T03:48:23.135Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "APP登陆",
+			"id": "ced28ff2-0d84-2d47-3024-11a957966636",
+			"url": "http://10.66.30.71:8003/users/authorization/sign-in",
+			"time": "2017-06-19T03:48:23.135Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"token更新完成": {
+					"pass": 1,
+					"fail": 0
+				},
+				"返回userID": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "修改个人资料-除头像部分 ",
+			"id": "23b17949-2bc4-aca9-5c82-84aa0457409a",
+			"url": "http://10.66.30.71:8003/users/profile/edit",
+			"time": "2017-06-19T03:48:23.135Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "获取个人资料 ",
+			"id": "3df42afd-1f20-d719-5aae-aec5755c5bd0",
+			"url": "http://10.66.30.71:8003/users/profile",
+			"time": "2017-06-19T03:48:23.135Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"返回性别为数字": {
+					"pass": 1,
+					"fail": 0
+				},
+				"电话正确": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "房车列表 ",
+			"id": "e6f9557e-3ab5-8876-d69f-bcce30ad86a2",
+			"url": "http://10.66.30.71:8003/touring-car",
+			"time": "2017-06-19T03:48:23.135Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"存在列表数据": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "房车详情 ",
+			"id": "dfaaf991-05eb-bf2c-ca7f-d8819e3353ac",
+			"url": "http://10.66.30.71:8003/touring-car/4449343725924352",
+			"time": "2017-06-19T03:48:23.135Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"表单数量与文档数量一致": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "房车图片集合",
+			"id": "1d1bba1e-129f-7dbe-9a2c-265ef82e4905",
+			"url": "http://10.66.30.71:8003/touring-car/4449343725924352/pictures",
+			"time": "2017-06-19T03:48:23.135Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "管理员登录接口 copy",
+			"id": "bef01718-9f3d-ed6c-43f4-c6c94190fefa",
+			"url": "http://10.66.30.71:8004/backstage-users/sign-in",
+			"time": "2017-06-19T03:48:23.135Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"登录成功": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "房车产品-获取基础设置详情（配置中心:sys_config） ",
+			"id": "ecc97ff7-c15a-8600-4a49-e23a65ec39b3",
+			"url": "http://10.66.30.71:8004/touring-car/setting",
+			"time": "2017-06-19T03:48:23.135Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Your test name": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "APP登陆 copy",
+			"id": "add1d1d5-1fb5-39b9-e67b-7357ca3bf0e7",
+			"url": "http://10.66.30.71:8003/users/authorization/sign-in",
+			"time": "2017-06-19T03:48:23.135Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"token更新完成": {
+					"pass": 1,
+					"fail": 0
+				},
+				"返回userID": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "房车预定 ",
+			"id": "362cd82a-1e83-ebc2-fde7-16fa70c5f615",
+			"url": "http://10.66.30.71:8003/orders/touring-car/create",
+			"time": "2017-06-19T03:48:23.135Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"预订成功并获的订单id": {
+					"pass": 1,
+					"fail": 0
+				},
+				"预订成功并获的订单code": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "管理员登录接口",
+			"id": "319e5c76-fb25-f119-1083-98ec7921e196",
+			"url": "http://10.66.30.71:8004/backstage-users/sign-in",
+			"time": "2017-06-19T03:48:23.135Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"登录成功": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "房车订单后台取消接口",
+			"id": "5cba41c2-d2d0-5072-0ef2-81bcc71c4d0f",
+			"url": "http://10.66.30.71:8004/orders/touring-car/4523519623065600/cancel",
+			"time": "2017-06-19T03:48:23.135Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "APP登陆 ",
+			"id": "7ee9ec12-e58c-3a17-4371-88ef45ad7695",
+			"url": "http://10.66.30.71:8003/users/authorization/sign-in",
+			"time": "2017-06-19T03:48:23.135Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"successful login": {
+					"pass": 1,
+					"fail": 0
+				},
+				"token更新完成": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "再次预订房车-返回房车Id跳转 ",
+			"id": "7d5d9302-3dc4-e561-9914-5c7a4dc3c980",
+			"url": "http://10.66.30.71:8003/orders/touring-car/reserve-again/4523519623065600",
+			"time": "2017-06-19T03:48:23.135Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "我的订单",
+			"id": "f3409259-32ab-9337-369e-e8a47ad53709",
+			"url": "http://10.66.30.71:8003/orders/my-orders",
+			"time": "2017-06-19T03:48:23.135Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"查询列表成功": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "房车订单详情 ",
+			"id": "e1ee98bb-a61d-558b-d4fc-3594ee352d7e",
+			"url": "http://10.66.30.71:8003/orders/touring-car/4523519623065600",
+			"time": "2017-06-19T03:48:23.135Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		}
+	],
+	"synced": false
+}
