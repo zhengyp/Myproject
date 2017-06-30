@@ -9,3 +9,17 @@
 
 5 测试报告的保存路劲为当前脚本执行路劲   即pwd路劲
 
+6 集成Jenkins
+
+7 Jenkins安装，下载war包   cmd进入war包目录  执行Java - jar jenkins.war启动Jenkins
+
+8 新建自由风格软件项目 构建选择execute Windows batch command  添加Newman 脚本newman run D:\neman\ceshi.json --environment D:\neman\ceshie.json
+
+9 保存后点击构建 
+
+10 控制台中文乱码问题  1，添加全局变量key LANG  VALUE zh.CH.UTF-8  2配置环境变量系统变量JAVA_TOOL_OPTIONS values -Dfile encoding utf-8
+
+                       3，jenkins 启动文件添加# Windows CMD  chcp 65001     # Shell export LANG="en_US.UTF-8"
+
+
+
