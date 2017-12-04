@@ -1,16 +1,16 @@
-git Ê¹ÓÃ·½·¨
+git ä½¿ç”¨æ–¹æ³•
 
-1 ×¢²ágithubÕËºÅ
+1 æ³¨å†Œgithubè´¦å·
 
-2 ÏÂÔØgit¿Í»§¶Ë gitbash
+2 ä¸‹è½½gitå®¢æˆ·ç«¯ gitbash
 
-3 mkdir /d/opt/repository´´½¨±¾µØ²Ö¿â   git init´´½¨gitÅäÖÃÎÄ¼ş
+3 mkdir /d/opt/repositoryåˆ›å»ºæœ¬åœ°ä»“åº“   git initåˆ›å»ºgité…ç½®æ–‡ä»¶
 
-4 gitÓëgithubÖ®¼äµÄ´«ÊäÊÇÍ¨¹ıSSH¼ÓÃÜµÄ£¬ËùÒÔµÚÒ»²½ÏÈÔÚ±¾µØÉú³ÉÒ».ssh   cd ~/.ssh  ÏÈ²é¿´±¾µØÊÇ·ñÓĞ.sshÎÄ¼ş£¬ÓĞµÄ»°É¾µô
+4 gitä¸githubä¹‹é—´çš„ä¼ è¾“æ˜¯é€šè¿‡SSHåŠ å¯†çš„ï¼Œæ‰€ä»¥ç¬¬ä¸€æ­¥å…ˆåœ¨æœ¬åœ°ç”Ÿæˆä¸€.ssh   cd ~/.ssh  å…ˆæŸ¥çœ‹æœ¬åœ°æ˜¯å¦æœ‰.sshæ–‡ä»¶ï¼Œæœ‰çš„è¯åˆ æ‰
 
-5 ÊäÈëÃüÁî£¬Éú³É.ssh£¬Ğ´Äã×Ô¼ºµÄÓÊÏä   ssh-keygen -t rsa -C "your email@.com"
+5 è¾“å…¥å‘½ä»¤ï¼Œç”Ÿæˆ.sshï¼Œå†™ä½ è‡ªå·±çš„é‚®ç®±   ssh-keygen -t rsa -C "your email@.com"
 
-6 ÎªÁË±ÜÃâÓëgithub´´½¨Á¬½ÓÊ±³ö´í£¬¿ÉÒÔĞÂ½¨Ò»¸öconfigÎÄ¼ş£¬½«ÒÔÏÂ´úÂë¸´ÖÆ½øÈ¥   Host github.com
+6 ä¸ºäº†é¿å…ä¸githubåˆ›å»ºè¿æ¥æ—¶å‡ºé”™ï¼Œå¯ä»¥æ–°å»ºä¸€ä¸ªconfigæ–‡ä»¶ï¼Œå°†ä»¥ä¸‹ä»£ç å¤åˆ¶è¿›å»   Host github.com
     User git
     Hostname ssh.github.com
     PreferredAuthentications publickey
@@ -18,33 +18,33 @@ git Ê¹ÓÃ·½·¨
     Port 443
 
 
-7 ½«id_rsa.pugµÄÄÚÈİ¸´ÖÆµ½Ö¸¶¨Î»ÖÃ  Í·Ïñ  setting  ssh and gpg keys 
+7 å°†id_rsa.pugçš„å†…å®¹å¤åˆ¶åˆ°æŒ‡å®šä½ç½®  å¤´åƒ  setting  ssh and gpg keys 
 
-8 ²âÊÔÁ¬½ÓÊÇ·ñ³É¹¦£¬ÏÂÍ¼±íÊ¾·ÃÎÊ³É¹¦	ssh -t git@github.com
+8 æµ‹è¯•è¿æ¥æ˜¯å¦æˆåŠŸï¼Œä¸‹å›¾è¡¨ç¤ºè®¿é—®æˆåŠŸ	ssh -t git@github.com
 
-9 ÉÏ´«ÏîÄ¿ git add <ÎÄ¼şÃû>   git commit -m "first commit" 
+9 ä¸Šä¼ é¡¹ç›® git add <æ–‡ä»¶å>   git commit -m "first commit" 
 
    git remote add origin git@github.com:zhengyp/Myproject.git
 
-   Èç¹û³ö´í  git remote rm origin ºó¼ÌĞøÉÏÒ»²½
+   å¦‚æœå‡ºé”™  git remote rm origin åç»§ç»­ä¸Šä¸€æ­¥
 
 10 git push -u origin master
 
-11 ¸üĞÂÎÄ¼ş git add readme.txt  git commit -m "ÓÅ»¯¶ş½ø¹¬"   git push -u origin master 
+11 æ›´æ–°æ–‡ä»¶ git add readme.txt  git commit -m "ä¼˜åŒ–äºŒè¿›å®«"   git push -u origin master 
 
-12 ¿ªÊ¼Ñ§Ï°·ÖÖ§Ïà¹Ø²¿·Ö
+12 å¼€å§‹å­¦ä¹ åˆ†æ”¯ç›¸å…³éƒ¨åˆ†
 
-13 ¿ËÂ¡´úÂë¿âµ½±¾µØ  ¿½±´Á´½Ó  ´ò¿ªgitbash  cd /d/opt1    git clone git@github.com:zhengyp/Myproject.git
+13 å…‹éš†ä»£ç åº“åˆ°æœ¬åœ°  æ‹·è´é“¾æ¥  æ‰“å¼€gitbash  cd /d/opt1    git clone git@github.com:zhengyp/Myproject.git
 
-14 ¸üĞÂ±¾µØ²Ö¿â cd /d/opt1  git add .  git commit -m "±à¼­"  
+14 æ›´æ–°æœ¬åœ°ä»“åº“ cd /d/opt1  git add .  git commit -m "ç¼–è¾‘"  
 
-15 ¸üĞÂÔ¶³Ì²Ö¿â git push 
+15 æ›´æ–°è¿œç¨‹ä»“åº“ git push 
 
-16 ´´½¨·ÖÖ§ git branch dev  ²é¿´·ÖÖ§£ºgit branch 
+16 åˆ›å»ºåˆ†æ”¯ git branch dev  æŸ¥çœ‹åˆ†æ”¯ï¼šgit branch 
 
-17 ÇĞ»»·ÖÖ§£ºgit checkout dev   ÇĞ»ØÖ÷·ÖÖ§
+17 åˆ‡æ¢åˆ†æ”¯ï¼šgit checkout dev   åˆ‡å›ä¸»åˆ†æ”¯
 
-18 ·ÖÖ§ĞŞ¸Ä git add . ±ØĞë¸úĞÂ±¾µØ²Ö¿â²ÅÄÜÇĞ»ØÖ÷·ÖÖ§  git commit -m "devĞŞ¸Ä"
+18 åˆ†æ”¯ä¿®æ”¹ git add . å¿…é¡»è·Ÿæ–°æœ¬åœ°ä»“åº“æ‰èƒ½åˆ‡å›ä¸»åˆ†æ”¯  git commit -m "devä¿®æ”¹"
 
 
 
@@ -53,12 +53,12 @@ git Ê¹ÓÃ·½·¨
   167  git branch
   168  git checkout master
   169  git add branch.txt
-  170  git commit -m "·ÖÖ§²âÊÔ"
+  170  git commit -m "åˆ†æ”¯æµ‹è¯•"
   171  git checkout dev
   172  git checkout master
   173  git checkout dev
   174  git add branch.txt
-  175  git commit -m "µÚÒ»´ÎĞŞ¸Ä·ÖÖ§"
+  175  git commit -m "ç¬¬ä¸€æ¬¡ä¿®æ”¹åˆ†æ”¯"
   176  git checkout master
   177  git push -u origin master
   178  git merge dev
@@ -68,35 +68,85 @@ git Ê¹ÓÃ·½·¨
   182  git push
   183  history
 
-gitÖ§³ÖºÜ¶àÖÖ¹¤×÷Á÷³Ì£¬ÎÒÃÇ²ÉÓÃµÄÒ»°ãÊÇÕâÑù£¬Ô¶³Ì´´½¨Ò»¸öÖ÷·ÖÖ§£¬±¾µØÃ¿ÈË´´½¨¹¦ÄÜ·ÖÖ§£¬ÈÕ³£¹¤×÷Á÷³ÌÈçÏÂ£º
+gitæ”¯æŒå¾ˆå¤šç§å·¥ä½œæµç¨‹ï¼Œæˆ‘ä»¬é‡‡ç”¨çš„ä¸€èˆ¬æ˜¯è¿™æ ·ï¼Œè¿œç¨‹åˆ›å»ºä¸€ä¸ªä¸»åˆ†æ”¯ï¼Œæœ¬åœ°æ¯äººåˆ›å»ºåŠŸèƒ½åˆ†æ”¯ï¼Œæ—¥å¸¸å·¥ä½œæµç¨‹å¦‚ä¸‹ï¼š
 
-È¥×Ô¼ºµÄ¹¤×÷·ÖÖ§
-È¥×Ô¼ºµÄ¹¤×÷·ÖÖ§
+å»è‡ªå·±çš„å·¥ä½œåˆ†æ”¯
+å»è‡ªå·±çš„å·¥ä½œåˆ†æ”¯
 $ git checkout work
 
-¹¤×÷
+å·¥ä½œ
 ....
 
-Ìá½»¹¤×÷·ÖÖ§µÄĞŞ¸Ä
+æäº¤å·¥ä½œåˆ†æ”¯çš„ä¿®æ”¹
 $ git commit -a
 
-»Øµ½Ö÷·ÖÖ§
+å›åˆ°ä¸»åˆ†æ”¯
 $ git checkout master
 
-»ñÈ¡Ô¶³Ì×îĞÂµÄĞŞ¸Ä£¬´ËÊ±²»»á²úÉú³åÍ»
+è·å–è¿œç¨‹æœ€æ–°çš„ä¿®æ”¹ï¼Œæ­¤æ—¶ä¸ä¼šäº§ç”Ÿå†²çª
 $ git pull
 
-»Øµ½¹¤×÷·ÖÖ§
+å›åˆ°å·¥ä½œåˆ†æ”¯
 $ git checkout work
 
-ÓÃrebaseºÏ²¢Ö÷¸ÉµÄĞŞ¸Ä£¬Èç¹ûÓĞ³åÍ»ÔÚ´ËÊ±½â¾ö
+ç”¨rebaseåˆå¹¶ä¸»å¹²çš„ä¿®æ”¹ï¼Œå¦‚æœæœ‰å†²çªåœ¨æ­¤æ—¶è§£å†³
 $ git rebase master
 
-»Øµ½Ö÷·ÖÖ§
+å›åˆ°ä¸»åˆ†æ”¯
 $ git checkout master
 
-ºÏ²¢¹¤×÷·ÖÖ§µÄĞŞ¸Ä£¬´ËÊ±²»»á²úÉú³åÍ»¡£
+åˆå¹¶å·¥ä½œåˆ†æ”¯çš„ä¿®æ”¹ï¼Œæ­¤æ—¶ä¸ä¼šäº§ç”Ÿå†²çªã€‚
 $ git merge work
 
-Ìá½»µ½Ô¶³ÌÖ÷¸É
+æäº¤åˆ°è¿œç¨‹ä¸»å¹²
 $ git push
+
+
+
+ git clone https://github.com/zhengyp/Myproject
+   39  cd f:
+   40  cd opt1
+   41  cd only
+   42  git init
+   43  cd ../
+   44  cd Myproject/
+   45  cd ../only/
+   46  ls
+   47  git add.
+   48  git add .
+   49  git commit -m 'first commit'
+   50  git remote add origin git@github.com:zhengyp/only.git
+   51  git push -u origin master
+   52  git pull
+   53  git push -u origin master
+   54  ls
+   55  git pull
+   56  git clone git@github.com:zhengyp/only.git
+   57  ls
+   58  ls
+   59  cd ..
+   60  ls
+   61  git clone @kevin-PC MINGW64 /f/opt1
+   62  $ git clone
+   63  $ git clone @kevin-PC MINGW64 /f/opt1
+   64  $ git clone
+   65  cd only
+   66  git init
+   67  git pull @kevin-PC MINGW64 /f/opt1
+   68  $ git clone
+   69  $ git clone git@github.com:zhengyp/only.git
+   70  $ git clone git@github.com:zhengyp/only.git
+   71  git pull git@github.com:zhengyp/only.git
+   72  ls
+   73  ls
+   74  git add .
+   75  git commit -m "ç¬¬ä¸€æ¬¡æäº¤"
+   76  git push
+   77  git remote add git@github.com:zhengyp/only.git
+   78  git remote add origin git@github.com:zhengyp/only.git
+   79  git push -u origin master
+   80  git add reg.json
+   81  git commit -m "ç¬¬äºŒæ¬¡æäº¤"
+   82  git push
+   83  git add reg.json
+
